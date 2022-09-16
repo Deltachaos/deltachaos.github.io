@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de_DE"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Kubernetes Rancher in LXC on Proxmox - The container matroska part 2 | Maximilian ‘Deltachaos’ Ruta</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Kubernetes Rancher in LXC on Proxmox - The container matroska part 2" />
+<meta name="author" content="Maximilian Ruta" />
+<meta property="og:locale" content="de_DE" />
+<meta name="description" content="About one year ago I have written an article on how to get Racher running in an LXC container on a Proxmox node. I managed to get it running and described the required steps in this article." />
+<meta property="og:description" content="About one year ago I have written an article on how to get Racher running in an LXC container on a Proxmox node. I managed to get it running and described the required steps in this article." />
+<link rel="canonical" href="https://www.deltachaos.de//it/2022/03/12/rancher-kubernetes-on-proxmox-lxc.html" />
+<meta property="og:url" content="https://www.deltachaos.de//it/2022/03/12/rancher-kubernetes-on-proxmox-lxc.html" />
+<meta property="og:site_name" content="Maximilian ‘Deltachaos’ Ruta" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-03-12T16:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kubernetes Rancher in LXC on Proxmox - The container matroska part 2" />
+<meta name="twitter:site" content="@Deltachaos" />
+<meta name="twitter:creator" content="@Deltachaos" />
+<meta property="article:publisher" content="https://www.facebook.com/maximilian.ruta" />
+<script type="application/ld+json">
+{"description":"About one year ago I have written an article on how to get Racher running in an LXC container on a Proxmox node. I managed to get it running and described the required steps in this article.","author":{"@type":"Person","name":"Maximilian Ruta"},"@type":"BlogPosting","url":"https://www.deltachaos.de//it/2022/03/12/rancher-kubernetes-on-proxmox-lxc.html","headline":"Kubernetes Rancher in LXC on Proxmox - The container matroska part 2","dateModified":"2022-03-12T16:00:00+00:00","datePublished":"2022-03-12T16:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.deltachaos.de//it/2022/03/12/rancher-kubernetes-on-proxmox-lxc.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://www.deltachaos.de//feed.xml" title="Maximilian 'Deltachaos' Ruta" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">δελταχαος</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Blog</a><a class="page-link" href="/musik.html">Musik</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Kubernetes Rancher in LXC on Proxmox - The container matroska part 2</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2022-03-12T16:00:00+00:00" itemprop="datePublished">12 March 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>About one year ago I have written an article on how to get Racher running in an LXC container on a Proxmox node. I
+managed to get it running and described the required steps in <a href="/it/2021/03/10/rancher-in-lxc.html">this article</a>.</p>
+
+<p>What I did not manage to get running was adding a cluster in Rancher using LXC nodes. I left the topic aside and moved
+on to other things. I had a lot of other projects in the meantime with Rachner and Kubernetes in general, and now wanted
+to finally start using it for my own infrastructure.</p>
+
+<p>Sure I could have accepted that Kubernetes is not running in LXC and used KVM based nodes to run a cluster.
+But I did not. There must be a way. Others are running Kubernetes as well in LXC containers. And resource usage, as well
+as backup is so much more efficient when using LXC containers.</p>
+
+<h2 id="no-final-success-yet">No final success (yet)</h2>
+
+<p>Before you expect to find the final solution in this blog post, I must disappoint you. I have solved
+a few problems so far but still did not manage to bring up a final cluster (yet). If you have any
+ideas after reading this, how to get it done, please let me know.</p>
+
+<p>The problem I was facing at the end is, that I was stuck at the error
+“network plugin is not ready: cni config uninitialized”.</p>
+
+<h2 id="the-reason-for-the-problems">The reason for the problems</h2>
+
+<p>The main difference between KVM and LXC is that containers are sharing the kernel with the host. Also there is no
+virtualization of devices. It behaves more like an advanced <code class="highlighter-rouge">chroot</code>. This means access to <code class="highlighter-rouge">/proc</code>, <code class="highlighter-rouge">/sys</code> and <code class="highlighter-rouge">/dev</code> is
+limited. Additionally the container lacks a lot of kernel capabilities by default. Loading of kernel modules cannot be
+done inside of the container, but rather needs to be done on the host.</p>
+
+<h2 id="docker-requirements">Docker requirements</h2>
+
+<p>Ranchers RKE1 (which is still the only available stable version as of the date of this post), is still using docker as
+container runtime, even though this has been deprecated by the Kubernetes project. But as this is still the case, we
+need to meat the docker requirements first, in order to proceed to the next step.</p>
+
+<p>Docker requires a few kernel modules to be enabled. Those are <code class="highlighter-rouge">overlayfs</code> and <code class="highlighter-rouge">aufs</code>. We will see some other
+required kernel modules later on as well, but lets keep it to those for now. Docker normally would load the modules for
+us, but as this is not permitted within the LXC container, we need to do it ourself.</p>
+
+<p>Executing following commands should do the trick.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modprobe aufs
+modprobe overlay
+</code></pre></div></div>
+
+<p>To ensure they are loaded on boot of the system the cleanest way is to create a file in <code class="highlighter-rouge">/etc/modules-load.d</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat &gt; /etc/modules-load.d/docker.conf &lt;&lt;EOF
+aufs
+overlay
+EOF
+</code></pre></div></div>
+
+<p>Now let’s create a container on the proxmox host. In my case it has the id <code class="highlighter-rouge">100</code>, is using Ubuntu 20.04 as base image,
+has <code class="highlighter-rouge">mgmt1.n.dev.localhost</code> as hostname. Make sure to adjust the network configuration to your network.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pct create 100 local:vztmpl/ubuntu-20.04-standard_20.04-1_amd64.tar.gz --cores 4 --memory 4096 --swap 2048 --hostname mgmt1.n.dev.localhost --rootfs local:20 --net0 name=eth0,ip=192.168.0.100/24,bridge=vmbr10,gw=192.168.0.1 --onboot 1
+</code></pre></div></div>
+
+<p>In order to run <code class="highlighter-rouge">docker</code> inside of the container, the container needs to be privileged. This is the case, if you don’t
+especially create the containers as unprivileged in Proxmox. This alone does not give us enough permissions, we need to
+enable the nesting feature in LXC as well.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pct set 100 --features nesting=1
+</code></pre></div></div>
+
+<p>Now we should be able to start the container, enter it, install <code class="highlighter-rouge">docker</code> and run a <code class="highlighter-rouge">hello-world</code> container.</p>
+
+<p>As we don’t want the container to be accessible using ssh and only use it as docker host, we remove
+some unnecessary packages. Please note that the removal of apparmor is required as well.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pct start 100
+pct enter 100
+apt-get -y remove openssh-server postfix accountsservice networkd-dispatcher rsyslog cron dbus apparmor
+wget -O - https://releases.rancher.com/install-docker/20.10.sh | sh
+reboot
+</code></pre></div></div>
+
+<p>Please note that we install docker using the script provided by Rancher, to have be compatible with the Kubernetes
+version we want to install. Feel free to check the script before you just dump it into <code class="highlighter-rouge">sh</code>. If you don’t want to use
+Kubernetes you can also install the <code class="highlighter-rouge">docker.io</code> package from distribution repositories.</p>
+
+<p>Now <code class="highlighter-rouge">docker run hello-world</code> should give you:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@mgmt1:~# docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+2db29710123e: Pull complete 
+Digest: sha256:4c5f3db4f8a54eb1e017c385f683a2de6e06f75be442dc32698c9bbe6c861edd
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre></div></div>
+
+<h2 id="running-docker-containers-is-not-enough">Running docker containers is not enough</h2>
+
+<p>At some point in the rancher setup, after you have created a cluster and want to add nodes to it, you are asked to
+execute something like this on the node, to bootstrap the cluster.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run  rancher/rancher-agent:v2.6.3 --server https://rancher.localhost --token &lt;some token&gt; --etcd --controlplane --worker
+</code></pre></div></div>
+
+<p>This basically creates a new container running <code class="highlighter-rouge">rancher-agent</code>, giving it full access to the docker daemon by mounting
+<code class="highlighter-rouge">/var/run/docker.sock</code>. This lets <code class="highlighter-rouge">rancher-agent</code> start new containers with the Kubernetes processes on the node.</p>
+
+<p>Normally you would now grab a coffee and wait 10 to 15 minutes for the node to become alive. But it’s not time for
+coffee yet.</p>
+
+<p>You will notice that the bootstrapping of the cluster now would fail. The LXC container need more capabilities, and
+permissions and modules.</p>
+
+<p>I did some research on the internet and adding a few lines to the LXC config, and a few modules should do the trick.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modprobe ip_vs
+modprobe ip_vs_rr
+modprobe ip_vs_wrr
+modprobe ip_vs_sh
+modprobe nf_conntrack
+modprobe br_netfilter
+modprobe rbd
+cat &gt;&gt; /etc/pve/lxc/100.conf &lt;&lt;EOF
+lxc.apparmor.profile: unconfined
+lxc.cgroup.devices.allow: a
+lxc.cap.drop: 
+lxc.mount.auto: "proc:rw sys:rw"
+EOF
+cat &gt;&gt; /etc/modules-load.d/docker.conf &lt;&lt;EOF
+ip_vs
+ip_vs_rr
+ip_vs_wrr
+ip_vs_sh
+nf_conntrack
+br_netfilter
+rbd
+EOF
+pct stop 100
+pct start 100
+</code></pre></div></div>
+
+<p>Now bootstraping fails because <code class="highlighter-rouge">/</code> is not shared. Ok the quick fix is to run <code class="highlighter-rouge">mount --make-rshared /</code> in the container.</p>
+
+<p>But still, bootstrapping the node gives me some error like
+<code class="highlighter-rouge">[controlPlane] Failed to upgrade Control Plane: [[host mgmt1 not ready]]</code>.</p>
+
+<p>After running <code class="highlighter-rouge">docker ps</code> on the node, I noticed on container in state restarting. Looking into the logs of this
+container, we notice that it did not start because <code class="highlighter-rouge">/dev/kmsg</code> is not available.</p>
+
+<p>The problem seems familiar, as it was the same problem we had wen running Rancher in LXC. So I tried the same fix, we
+did there.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lxc.mount.entry: /dev/kmsg dev/kmsg none defaults,bind,create=file
+</code></pre></div></div>
+
+<p>Problem seems that now <code class="highlighter-rouge">/dev/kmsg</code> exists, but is not readable. I did not managed to solve this problem, but found a
+workaround that seems to be sufficient. Linking <code class="highlighter-rouge">/dev/kmsg</code> to <code class="highlighter-rouge">/dev/console</code>.</p>
+
+<p>So now lets make those changes persistent. Applying those changes on boot using rc.local is not pretty, but should do
+the job.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat &gt; /etc/rc.local &lt;&lt;EOF
+#!/bin/sh -e
+
+if [ ! -e /dev/kmsg ]; then
+    ln -s /dev/console /dev/kmsg
+fi
+
+mount --make-rshared /
+EOF
+chmod +x /etc/rc.local
+/etc/rc.local
+</code></pre></div></div>
+
+<h2 id="access-to-sysctl">Access to sysctl</h2>
+
+<p>Even after those changes, we see one container failing. Looking into it, you see that Kubernetes wants to change
+<code class="highlighter-rouge">net.netfilter.nf_conntrack_max</code>, as the value configured by default in Proxmox is too low.</p>
+
+<p>In my case I had to change it to at least <code class="highlighter-rouge">786432</code>. The strange thing is, I thought that using <code class="highlighter-rouge">proc:rw sys:rw</code> would
+allow write access to those settings. But this seems not to be the case. Those need to be changed on the host.</p>
+
+<p>I changed the value and tried again. Long story short, those are the settings that need to be changed:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat &gt; /etc/sysctl.d/100-docker.conf  &lt;&lt;EOF
+net.netfilter.nf_conntrack_max=786432
+EOF
+cat &gt;&gt; /etc/modules-load.d/docker.conf &lt;&lt;EOF
+options nf_conntrack hashsize=196608
+EOF
+</code></pre></div></div>
+
+<h2 id="networking-problems">Networking problems</h2>
+
+<p>After all those changes, in my trys I was stuck at the Problem “network plugin is not ready: cni config uninitialized”.
+The directory <code class="highlighter-rouge">/etc/cni/net.d</code> on the node (which is mapped into the containers), has not been
+created. I tried all network plugins rancher provided in different versions.</p>
+
+<p>Well, I leave it to this for now.</p>
+
+
+  </div><a class="u-url" href="/it/2022/03/12/rancher-kubernetes-on-proxmox-lxc.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">δελταχαος</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Maximilian Ruta</li><li>E-Mail: <a class="u-email" href="mailto:mr@deltachaos.de">mr@deltachaos.de</a></li>
+            <li>GnuPG Key: <a class="u-gnupg" href="/gnupg.html">0xE2093512D5F67BBA</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/maximilian.ruta"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">maximilian.ruta</span></a></li><li><a href="https://www.twitter.com/Deltachaos"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">Deltachaos</span></a></li><li><a href="https://github.com/Deltachaos"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Deltachaos</span></a></li><li><a href="https://stackexchange.com/users/895133/maximilian-ruta"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#stackoverflow"></use></svg> <span class="username">maximilian-ruta</span></a></li><li><a href="https://last.fm/de/user/deltachaosrec"><img class="svg-icon" src="/assets/lastfm.svg" /> <span class="username">deltachaosrec</span></a></li><li><a href="https://instagram.com/deltachaosrec"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">deltachaosrec</span></a></li><li><a href="https://youtube.com/deltachaosrec"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg> <span class="username">deltachaosrec</span></a></li><li><a href="https://www.xing.com/profile/Maximilian_Ruta"><img class="svg-icon" src="/assets/xing.svg" /> <span class="username">Maximilian_Ruta</span></a></li><li><a href="https://www.linkedin.com/in/maximilian-ruta-72b5b05a"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">maximilian-ruta</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Web Entwickler aus Leidenschaft, politisch engagiert, Radiohörer, Vegetarier. Ich schreibe hier über alles was mich bewegt, das aktuelle politische Geschehen, Nerdkarms, und Musik.</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Artikel und Texte sind lizenziert unter der <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>. Weitere Informationen unter <a href="/license.html">LICENSE</a>.
+      </div>
+    </div><div class="edit-on-github"><a target="_blank" href="https://github.com/Deltachaos/deltachaos.github.io/edit/source/_posts/2022-03-12-rancher-kubernetes-on-proxmox-lxc.md">Fehler gefunden? Seite auf GitHub bearbeiten!</a></div>
+</div>
+
+</footer>
+</body>
+
+</html>
