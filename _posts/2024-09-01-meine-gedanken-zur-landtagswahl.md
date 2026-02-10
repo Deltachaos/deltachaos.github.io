@@ -1,41 +1,66 @@
 ---
 layout: post
-title:  "Meine Gedanken zu den Ergebnissen der Landtagswahl"
+title:  "My Thoughts on the State Election Results"
 date:   2024-09-01 18:00:00 +0100
 categories: politik
 draft: false
+lang: en
 ---
 
-## Die Brandmauer gegen die AfD und ihre Schwächen
+## The “Firewall” Against the AfD—and Its Weaknesses
 
-Die Brandmauer gegen die AfD kannibalisiert sich selbst durch die unfreiwillige "Heirat" von Partnern, die kaum Gemeinsamkeiten haben – so lange, bis sie irgendwann bricht. Das erinnert mich leider an 1939.
+The so‑called “firewall” against the AfD cannibalizes itself through an involuntary “marriage” of partners who have
+hardly anything in common—until it eventually breaks. Unfortunately, that reminds me of 1939.
 
-## Ablehnung von Migration: Ursachen und Folgen
+## Rejection of Migration: Causes and Consequences
 
-Wir müssen akzeptieren und feststellen, dass die Menschen in Deutschland keine Migration mehr wünschen. Dafür gibt es verschiedene Gründe: Die Überforderung des Landes durch über 2,5 Millionen Flüchtlinge innerhalb der letzten zehn Jahre, die Entstehung von Parallelgesellschaften und das Erodieren des Gerechtigkeitsgefühls in diesem Land.
+We have to accept—and acknowledge—that people in Germany no longer want immigration. There are various reasons for this:
+the country being overwhelmed by more than 2.5 million refugees over the last ten years, the emergence of parallel
+societies, and the erosion of people’s sense of fairness and justice.
 
-## Politisches Versagen und die Erosion des Gerechtigkeitsgefühls
+## Political Failure and the Erosion of Fairness
 
-Dass dieses Gerechtigkeitsgefühl erodiert ist, liegt in der Verantwortung der politischen Akteure der letzten Jahre. In den großen Koalitionen wurde lange Zeit nur in homöopathischen Schritten gegen prekäre Beschäftigungsverhältnisse vorgegangen. Gute Verbesserungen für diejenigen, die in diesem Land am wenigsten haben, werden nicht von der Gesellschaft getragen, da sich die arbeitende Mitte überfordert fühlt – durch Inflation, das Heizungsgesetz und drohenden Arbeitsplatzverlust. Der Eindruck breitet sich aus, dass sich Arbeit in diesem Land nicht mehr lohnt.
+That this sense of fairness has eroded is the responsibility of the political actors of recent years. Under the grand
+coalitions, action against precarious employment conditions happened only in “homeopathic” steps for a long time.
+Meaningful improvements for those who have the least are not broadly supported, because the working middle feels
+overburdened—by inflation, the heating law, and the threat of job loss. The impression is spreading that work no longer
+pays off in this country.
 
-## Bürokratie und Unternehmensfeindlichkeit als Wachstumsbremse
+## Bureaucracy and Hostility Toward Business as a Brake on Growth
 
-Unternehmen bekommen statt Rückenwind nur Steine in den Weg gelegt und werden jedes Jahr mit mehr Bürokratie überhäuft. Wer eine neue Produktionshalle bauen will, sollte sich hüten: Wenn man nicht Intel oder Elon Musk heißt, muss man sich mit sinnlosen Regeln, überbordenden Vorschriften zu Brandschutz, energetischer Sanierung, Archäologie und anderem herumschlagen. Dieses Schneckentempo wird nur noch von staatlichen Projekten übertroffen. Wir bauen heute Brücken in einem Tempo, in dem früher ganze Stadtviertel errichtet wurden. Wir brauchen einen Kahlschlag in unserem Dschungel an Gesetzen und Vorschriften sowie eine massive Entschlackung der Bürokratie.
+Businesses get stones thrown in their way instead of tailwinds, and every year they’re burdened with even more
+bureaucracy. Anyone who wants to build a new production hall should beware: if you’re not Intel or Elon Musk, you have
+to wrestle with pointless rules and excessive regulations on fire safety, energy retrofits, archaeology, and more. This
+snail’s pace is only surpassed by government projects. Today we build bridges at a speed at which entire neighborhoods
+used to be constructed. We need a clear‑cutting of our jungle of laws and regulations, and a massive slimming‑down of
+bureaucracy.
 
-## Die Gefahr von einfachen Lösungen und der Weg nach vorn
+## The Danger of Simple Solutions—and the Way Forward
 
-Die einfache Lösung, die von den rechten Parteien propagiert wird, besteht darin, nach unten zu treten. Das mag vielleicht die aufgebrachte Mitte kurzfristig befriedigen, gefährdet aber dennoch den sozialen Frieden. Die Lösung muss darin bestehen, die Bedingungen im Niedriglohnsektor und für die Mitte der Gesellschaft zu verbessern, zum Beispiel durch einen höheren Mindestlohn.
+The “simple solution” promoted by right‑wing parties is to kick downward. That may briefly satisfy an enraged middle,
+but it endangers social peace. The solution must be to improve conditions in the low‑wage sector and for the middle of
+society—for example by raising the minimum wage.
 
-## Vertrauensverlust in die regierenden Parteien
+## Loss of Trust in Governing Parties
 
-Vor all diesen Problemen verschließen jedoch momentan gefühlt alle Parteien die Augen. Die Menschen haben schlicht das Vertrauen verloren, dass die regierenden Parteien der letzten Jahrzehnte in der Lage sind, diese Probleme zu lösen.
+In the face of all these problems, it currently feels like almost all parties are closing their eyes. People have simply
+lost trust that the governing parties of the last decades are capable of solving these issues.
 
-## Und was jetzt?
+## So What Now?
 
-Deutschland steht am Scheideweg, und es sind jetzt sofort radikale Maßnahmen erforderlich. Die lähmenden Mühlen der Bürokratie müssen ohne weitere Verzögerung abgebaut werden. Gesetze müssen entschlackt werden, um den bürokratischen Überbau zu beseitigen, der Unternehmen und Innovation hemmt. Die Strafen für Gewaltdelikte müssen drastisch verschärft werden, und es braucht mehr Geld und Personal für unsere Polizei, um die öffentliche Sicherheit zu garantieren, ohne Bürgerrechte zu beschneiden.
+Germany stands at a crossroads, and radical measures are required immediately. The paralyzing mills of bureaucracy must
+be dismantled without further delay. Laws must be streamlined to remove the bureaucratic superstructure that hinders
+business and innovation. Penalties for violent crimes must be tightened drastically, and we need more funding and staff
+for our police to guarantee public safety without curtailing civil liberties.
 
-Die stufenweise Erhöhung des Mindestlohns ist eine dringende Notwendigkeit, um soziale Gerechtigkeit und wirtschaftliche Fairness herzustellen. Notwendige Innovationen zum Schutz unseres Planeten müssen durch eine deutliche höhere CO2-Besteuerung angekurbelt werden. Diese wird nur Akzeptanz finden, wenn jeder Cent als Energiegeld wieder ausgeschüttet wird und niedrige Einkommenschichten hier zusätzliche Unterstützung erhalten.
+A stepwise increase of the minimum wage is urgently needed to restore social justice and economic fairness. Necessary
+innovations to protect our planet must be accelerated through significantly higher CO₂ taxation. This will only be
+accepted if every cent is paid back out as a climate dividend (energy money), with additional support for lower‑income
+groups.
 
-In der Migrationspolitik ist sofortiges Handeln gefragt: Asylverfahren dürfen nicht länger als einige Monate dauern, gleichzeitig muss Arbeitsaufnahme in den Bereichen Handwerk und Gesundheit umgehend ermöglicht werden. Gleichzeitig müssen konsequente Maßnahmen gegen abgelehnte Asylbewerber ergriffen werden, wenn diese unsere gesellschaftlichen Werte ablehnen – konsequentes Abschieben gehört auch dazu, damit die bleiben können welche wirklich eine Bereicherung für unsere Gesellschaft sind oder die wirklich unseren Schutz brauchen.
+On migration policy, immediate action is required: asylum procedures must not take longer than a few months, and taking
+up work in skilled trades and healthcare must be enabled right away. At the same time, consistent measures must be
+taken against rejected asylum seekers if they reject our societal values—this includes consistent deportations, so that
+those who truly enrich our society, or who genuinely need our protection, can stay.
 
-Es ist höchste Zeit, dass wir diese notwendigen Reformen umsetzen. Deutschland kann es sich nicht leisten, weiterhin zu zögern.
+It’s high time we implement these necessary reforms. Germany can’t afford to keep hesitating.

@@ -1,87 +1,79 @@
 ---
 layout: post
-title:  "Warum Artikel 13 der EU Urheberrechtsreform unverhältnismäßig ist"
+title:  "Why Article 13 of the EU Copyright Reform Is Disproportionate"
 date:   2019-03-14 16:00:00 +0100
 categories: politik
 draft: false
+lang: en
 ---
 
-Ich habe heute eine E-Mail gelesen von jemandem der den Beschluss der Kölner Grünen, sich mit der
-Initiative [#SaveTheInternet](https://savetheinternet.info) zu solidarisieren, nicht nachvollziehen kann. Die Fronten der
-Befürworter und Gegener der geplanten EU Urheberrechtsreform sind verhärtet. Daher habe ich das als Anlass genommen, der
-Person in einer Antwort anhand eines Beispiels darzulegen, weshalb ich Artikel 13 und 11 dieser Richtlinie in seiner
-jetzigen Form für unverhältnismäßig halte.
+Today I read an email from someone who couldn’t understand why the Green Party in Cologne decided to show solidarity
+with the [#SaveTheInternet](https://savetheinternet.info) initiative. The fronts between supporters and opponents of the
+planned EU copyright reform have hardened. I took this as an opportunity to explain—using an example in my reply—why I
+consider Articles 13 and 11 of this directive disproportionate in their current form.
 
-## Globuli
+## Globuli (Homeopathy)
 
-Es ist wichtig, an dieser Stelle nicht immer nur wild aufeinander loszugehen, sondern sich auch in die Position der
-Gegenseite versetzten zu können. Ich kann Urherber, deren Werke permanent genutzt werden, ohne dafür Entlohnt zu werden,
-gut verstehen, nur wird diese Reform das Problem auch nicht lösen. Ich denke, am Ende kämpfen wir für die gleiche Sache: 
-Die faire Entlohnung von Urherbern. Der Streit sollte sich eher darüber richten, wie man es besser machen kann, als
-Artikel 13 es vorsieht anstatt ein Placebo zu verteidigen.
+It’s important not to just attack each other, but to be able to put yourself in the other side’s position. I can
+absolutely understand authors and creators whose works are used constantly without proper compensation. But this reform
+won’t solve that problem either. I believe we’re ultimately fighting for the same thing: fair compensation for
+creators. The debate should focus on how to do this better than Article 13 proposes—instead of defending a placebo.
 
-Das ist, was vorallem die EVP Fraktion und Herr Voss tun. Sie behaupten, mit der Reform würden die Urheber gestärkt und
-glauben daran anscheinend so Fest, wie manche Menschen an Homöopathie. In der Tat gibt es hier einige Parallelen.
+That’s what the EPP group and Mr. Voss in particular are doing. They claim the reform will strengthen creators and seem
+to believe in it as firmly as some people believe in homeopathy. In fact, there are some parallels.
 
-Genau wie in der homöopathie wird versucht, gleiches mit gleichem zu bekämpfen. YouTube verdient Geld mit der Nutzung von
-fremden Inhalten, doch mit den neuen einklagbaren Rechten durch Verwertungsgesellschaften werden dann pauschale
-Lizenzvereinbarungen getroffen. Und Aufgrund der Pauschalität verdienen die Verwertungsgesellschaften ab diesem Zeitpunkt
-auch Geld an Inhalten, deren Rechte sie eigentlich gar nicht vertreten. 87,50 € habe ich an Verwertungsgeselschaften
-dafür bezahlt, dass ich in meinem Unternehmen Verträge drucken und eingehende Briefpost digitalisieren darf.
+Just like in homeopathy, the idea is to fight “like with like.” YouTube earns money by using third‑party content; in
+response, new enforceable rights via collecting societies would lead to blanket license agreements. Because those
+licenses are flat-rate, collecting societies would then also earn money on works whose rights they don’t actually
+represent. I paid €87.50 to collecting societies simply to be allowed to print contracts in my company and digitize
+incoming mail.
 
-Und genau wie in der homöopathie ist die Richtlinie vollkommen wirkungslos. Die Plattformen welche aktuell mit Werbung
-viel Geld verdienen, auf welchen man bei Klick auf den Play Button zur nächsten Pornoseite weitergeleitet wird, die sich
-auch nicht um Jugendschutz oder das aktuelle Notice and Take Down Verfahren scheren, diese Plattformen werden auch die
-neuen Regelung einfach ignorieren.
+And just like homeopathy, the directive is effectively powerless. The platforms that currently make lots of money with
+ads—where clicking “Play” redirects you to the next porn site—platforms that don’t care about youth protection or the
+existing notice-and-takedown process, will simply ignore the new rules as well.
 
-Und als letztes ist diese Regelung, genau wie homöopathie, gefärlich, denn die vielen kleinen Unternehmen,
-welche am Ende Uploadfilter bei Google und Co. lizensieren, werden am Ende Google stärken und die kleinen schwächen.
+Finally, this regulation—again like homeopathy—is dangerous: the many small companies that would ultimately have to
+license upload filters from Google & co. would end up strengthening the big players and weakening the small ones.
 
-## Ein Beispiel
+## An Example
 
-Zurück zu der E-Mail die ich gelesen habe. Ich habe, wie es sich gehört, geantwortet und möchte diese Antwort
-niemandem vorenthalten:
+Back to the email I read. I replied (as one should), and I don’t want to withhold that response from anyone:
 
-Die berechtigten Interessen der Urheber im Rahmen der neuen technischen Möglichkeiten in Einklang zu bringen ist immer
-schwierig. Wir denken, dass die aktuell vorgeschlagene Regelung beiden Interessen nicht gerecht wird. Da mit dem 
-Trilogkompromiss leider auch sämtliche Ausnahmeregelungen für kleine Unternehmen weggefallen, stehen die vorgeschlagenen
-Maßnahmen in keinerlei Verhältnis zu den Folgen für die Plattformbetreiber.
+Bringing the legitimate interests of creators in line with new technical possibilities is always difficult. We believe
+the currently proposed regulation does not do justice to either side. Since the trilogue compromise unfortunately also
+removed all meaningful exemptions for small companies, the proposed measures are entirely out of proportion to their
+consequences for platform operators.
 
-Beispielsweise müsste chefkoch.de mit allen Rechteinhabern (der Welt?) Verhandlungen aufnehmen um Inhalte zu lizenzieren,
-die potentiell hochgeladen werden könnten, obwohl diese Plattform im Grunde keine Probleme mit Urheberrechtsverstößen
-hat, da es sich um Rezepte von Hobbyköchen handelt, welche sich darüber austauschen. Alternativ dazu könnte die Plattform
-natürlich sämtliche Inhalte vor Veröffentlichung auf potentielle Urheberrechtsverstöße prüfen.
+For example, chefkoch.de would have to negotiate with all rights holders (in the world?) to license content that might
+potentially be uploaded—even though the platform doesn’t really have a copyright‑infringement problem, since it’s about
+recipes shared by hobby cooks. Alternatively, the platform could of course check all content for potential copyright
+infringements before publication.
 
-Dazu könnten Filter eingesetzt werden. Deren Entwicklungsaufwand ist, anders als in dem
-[FAZ Artikel](https://www.faz.net/aktuell/feuilleton/medien/debatte-um-das-urheberrecht-der-kampf-gegen-artikel-13-16085460.html)
-beschrieben, nicht unerheblich. Ein Vergleich mit dem Unternehmen Shazam hinkt, handelt es sich bei der Mustererkennung
-bei Shazam schließlich um deren Kerngeschäft und nicht um eine Reaktion auf eine regulatorische Maßnahme. Ein Unternehmen
-dieser Größe wird diese Technik daher von Unternehmen wie Google lizenzieren müsste, oder es müsste mit erheblichem
-Personalaufwand manuell geprüft werden. Aber selbst an diesem Punkt hinkt der Vergleich.
+Filters could be used for this. But their development effort is far from trivial—contrary to what is suggested in this
+[FAZ article](https://www.faz.net/aktuell/feuilleton/medien/debatte-um-das-urheberrecht-der-kampf-gegen-artikel-13-16085460.html).
+Comparing this to Shazam is misleading: pattern recognition is Shazam’s core business, not a response to a regulatory
+requirement. A company of that size would likely have to license the technology from providers like Google, or it would
+have to review content manually with significant staffing costs. But even here, the comparison still breaks down.
 
-Ein Filter, ob es nun ein Mensch oder ein Computer ist, kann nicht beurteilen, ob ein Werk Urheberrechte dritter
-verletzt sondern kann immer nur vergleichen, ob ein Werk ähnlich mit einer bekannten Referenz ist. Das heißt, damit die
-Plattform beurteilen ob das Bild vom Apfelkuchen von einem anderen Fotografen gemacht wurde als von dem, der das Bild auf
-der Plattform einstellt, müsste die Plattform erstmal alle Bilder von Apfelkuchen der Fotografen kennen, die eben nicht
-von der hochladenden Person gemacht wurden.
-Dass diese Voraussetzung schlicht nicht erfüllbar ist, sollte klar sein.
+A filter—whether human or automated—can’t actually judge whether a work infringes third‑party copyrights. It can only
+compare whether something resembles a known reference. In other words: for a platform to determine that a photo of an
+apple pie was taken by a different photographer than the person uploading it, the platform would first need to “know”
+all apple‑pie photos taken by photographers *other than* the uploader. It should be obvious that this requirement is
+simply impossible to meet.
 
-Selbst wenn, dann ließe sich auch nicht beurteilen, ob es sich dabei um unwesentliches Beiwerk nach § 57 UrhG oder ein Zitat
-handelt. Beispielsweise bei der Aufzeichnung einer Demonstration, bei welcher für einen kurzen Moment im Hintergrund ein
-Ausschnitt eines Musikstücks zu hören ist.
+Even if it were possible, you still couldn’t judge whether something is incidental inclusion (e.g. §57 UrhG) or a
+quotation. Consider recording a demonstration where, for a brief moment, you can hear a snippet of a song in the
+background.
 
-Anhand dieses Beispiels sieht man, dass die Konsequenzen der aktuellen Regelung vollkommen unverhältnismäßig sind. Artikel
-13 müsste mindestens weiterhin echte Ausnahmeregelungen für Unternehmen beinhalten, die gar nicht das primäre Ziel dieser
-Neuregelung sind.
+This example shows why the consequences of the current proposal are completely disproportionate. Article 13 would at
+least have to include real exemptions for companies that aren’t even the primary target of the reform.
 
-## Wie geht es besser?
+## How Could It Be Done Better?
 
-Aber es gibt ja auch vollkommen andere Vorschläge um die Urheber zu schützen. Ein Vorschlag könnte eine
-Gewinnabschöpfung der Plattform zugunsten des Urhebers im Falle eines Notice and Take down sein. Und selbst wenn ich
-mich persönlich darüber Ärgere, für meinen Drucker eine pauschale Urheberrechtsabgabe geleistet zu haben, obowhl ich
-damit keine Urhebrrechtsverletzungen begehe, so könnte das vielleicht ein Kompromiss sein, der die Interessen der
-Urheber mit denen der Nutzer in Einklang bringt.
+But there are completely different proposals for protecting creators. One idea could be to skim platform profits in
+favor of the creator in a notice‑and‑takedown case. And even though I personally find it irritating to have paid a flat
+copyright levy for my printer—despite not committing any copyright infringements with it—that might be the kind of
+compromise that could align the interests of creators with those of users.
 
-Man stelle sich mal vor, man hätte die Hersteller von Scannern, Bandaufnahmegeräten, Kameras, Computern oder
-Buchpressen für Urheberrechtsverletzungen, welche durch deren Geräte begangen werden, haftbar gemacht. Die Welt
-wäre eine andere.
+Imagine if we had held manufacturers of scanners, tape recorders, cameras, computers, or printing presses liable for
+copyright infringements committed with their devices. The world would look very different.

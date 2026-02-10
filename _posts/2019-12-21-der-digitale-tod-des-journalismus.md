@@ -1,63 +1,54 @@
 ---
 layout: post
-title:  "Der digitale Tod des Journalismus"
+title:  "The Digital Death of Journalism"
 date:   2019-12-21 10:00:00 +0100
 categories: politik
 draft: false
+lang: en
 ---
 
-Die politische Ausernandersetzung in Deutschland wird immer schwieriger.
-Fake News, alternative Fakten und einseitge Berichterstattung führen zu einem sich
-immer weiter verhärtenden Diskurs und letztendlich durch einen sich dadurch
-verstärkenden Nationalismus logischerweise zu einer massiven Krise des
-Multilateralismus. Und das alles in einer Zeit in welcher die Weltgemeinschaft
-angesichts von Herausforderungen wie Klimawandel eine vertrauensvolle Zusammenarbeit
-dringender den je benötigen würde.
+Political debate in Germany is becoming more and more difficult. Fake news, “alternative facts,” and one‑sided coverage
+lead to an increasingly hardened discourse—and, via the nationalism that this dynamic reinforces, quite logically to a
+massive crisis of multilateralism. All of this is happening at a time when the global community, facing challenges like
+climate change, would need trustworthy cooperation more urgently than ever.
 
-Es gibt ein sich aus Ratlosigkeit hinter Paywalls im der digitalen Depressionshöhle
-verkriechendes Medium, welches serös und verlässlich berichtet, wenn villeicht auch
-mit unteschiedlicher Gewichtung, aber wenigstens überhaupt, unterschiedliche Ansichten
-gegenüberstellt und in dieser Ausernandersetzung doch so dringend gebraucht wird: Es
-nennt sich "Tageszeitung".
+There is a medium that, out of helplessness, crawls behind paywalls into a digital depression cave—and yet reports
+seriously and reliably (even if with varying emphasis). At least it still puts different perspectives side by side—just
+when we need that the most. It’s called the “daily newspaper.”
 
-## Zu Besuch in der digitalen Depressionshöhle
+## Visiting the Digital Depression Cave
 
-Da ich gerne unterschiedliche Ansichten zu einem Thema kenne betrachte ich gerne
-verschiedene Medien. Daher gehört auch die [Sendung "Presseschau" des
-Deutschlandfunk](https://www.deutschlandfunk.de/dlf-audio-archiv.2386.de.html?drau:broadcast_id=180)
-zu meinem Tagesritual. Von taz über Handelsblatt, Süddeutsche und FAZ bis WELT liegen
-bei der Interpretation der Tagespolitik Welten. Und die Wahrheit ist wie so häufig
-nicht schwarz oder weiß sondern liegt irgendwo dazwischen.
+Because I like to know different viewpoints on a topic, I follow a range of media outlets. That’s why the
+Deutschlandfunk program [“Presseschau”](https://www.deutschlandfunk.de/dlf-audio-archiv.2386.de.html?drau:broadcast_id=180)
+is part of my daily routine. From taz to Handelsblatt, Süddeutsche, FAZ, and WELT—there are worlds between them in how
+they interpret day‑to‑day politics. And as so often, the truth isn’t black or white, but somewhere in between.
 
-Möglicherweise ist bei Artikeln des Feuilleton ein Vergleich weniger spannend
-als Artikel der Titelseiten. Sich daher eine komplette Zeitung kaufen? In der
-analogen Papierwelt machen das wohl die wenigsten.
-Doch die Digitalisierung würde die Chance für die Verlage auch die Stammleser*innen
-anderer Zeitungen für sich zu gewinnen.
+Maybe comparing culture-section pieces is less interesting than comparing front pages. So: buy an entire newspaper just
+for that? In the analog paper world, hardly anyone does. But digitalization could give publishers the chance to win over
+regular readers of other newspapers, too.
 
-Doch statt gemeinsamen Apps, einfachen Mikrotransaktionen und preiswerter Abo Modelle
-verstecken die Zeitungen sich hinter Paywalls und warten auf den Tod durch Vergessen.
+But instead of shared apps, simple microtransactions, and affordable subscription models, newspapers hide behind
+paywalls—and wait for death by being forgotten.
 
-Die Kleinstaaterei ist in Zeiten von Netflix und mit Preisen von 20€ - 50€ im Monat
-**für eine einzige Zeitung** vollkommen antiquiert. Statt gemeinsamm Ressourcen für
-eine wirklich gute App zu nutzen erfindet jeder Verlag das Rad wieder neu.
+This kind of fragmentation is completely outdated in the age of Netflix—especially with prices of €20–€50 per month
+**for a single newspaper**. Instead of pooling resources for a truly good app, every publisher reinvents the wheel.
 
-## Ein Wutbrief
+## An Angry Letter
 
-Das alles hat mich heute so aufgeregt das ich folgende Wutmail an den
-"Bundesverband Deutscher Zeitungsverleger e.V." gesendet habe.
+All of this annoyed me so much today that I sent the following angry email to the
+“Bundesverband Deutscher Zeitungsverleger e.V.” (Federal Association of German Newspaper Publishers).
 
-> Hallo,
+> Hello,
 > 
-> in Zeiten von Digitalisierung und schrumpfender Auflagen wundere ich mich weshalb die deutschen Zeitungsverlage sich bis jetzt noch nicht auf ein gemeinsames digitales Angebot zu einem bezahlbaren monatlichen Abo Preis verständigen konnten.
+> in times of digitalization and shrinking circulation numbers, I wonder why German newspaper publishers still haven’t been able to agree on a joint digital offering at an affordable monthly subscription price.
 > 
-> Wenn Netflix mit 10€ im Monat Zugang zu tausenden von Serien und Filmen bieten kann, warum können deutsche Zeitungsverlage nicht für einen Preis von 10€ im Monat Zugang zu vielen Artikeln von Zeitungen bieten sondern versuchen stattdessen zu abgehobenen Abopreisen von 50€ im Monat Abonnenten zu gewinnen.
+> If Netflix can provide access to thousands of series and films for €10 a month, why can’t German newspaper publishers offer access to many newspaper articles for €10 a month—instead of trying to win subscribers with absurd subscription prices of €50 a month?
 > 
-> Das Online Angebot inter Paywalls zu verstecken bringt nichts. Ich bin als Leser nicht bereit für ein Digital Abo abzuschließen für einen Artikel des „Buxtehude Remscheider Anzeigers“ abzuschließen nur weil dieses Blatt einmal im Jahr in meiner Twitter Timeline auftaucht und mich der Artikel gerade interessieren würde. Und nein, ich bin als Nutzer auch nicht bereit mich dann durch 5 verschiedene Seiten zu klicken, meine Kreditkarten oder PayPal Daten rauszusuchen um eine Mikrotransaktion für die Freischaltung des einzelnen Artikels freizugeben. Dann lese ich den Artikel halt nicht oder der Mensch der den Artikel in den Sozialen Medien verlinkt hat postet einen Screenshot des Artikels nachdem 50 Kommende à la „Paywall, kann ich nicht lesen“ eingegangen sind. Davon hat der Verlag dann gar nichts. Achso, ich hab vergessen dafür gibt es ja die VG Wort 😂.
+> Hiding the online offering behind paywalls achieves nothing. As a reader, I’m not willing to take out a digital subscription for an article from the “Buxtehude Remscheider Anzeiger” just because that paper happens to show up once a year in my Twitter timeline and the article looks interesting. And no, as a user I’m also not willing to click through five different pages, dig out my credit card or PayPal details, and approve a microtransaction just to unlock a single article. Then I simply won’t read it—or the person who linked it on social media will post a screenshot after 50 comments like “Paywall, can’t read it” roll in. The publisher gains nothing from that. Oh right, I forgot—there’s VG Wort for that 😂.
 > 
-> Eines kann ich Ihnen als Teil der digitalen Generation versprechen, so wird der Journalismus in Deutschland sterben. Und zwar nicht weil die „digitale Generation“ nicht bereit wäre Geld für Journalismus auszugeben, sondern weil die Verlage nicht erkannt haben wie digitale Geschäftsmodelle funktionieren.
+> As part of the digital generation, I can promise you one thing: this is how journalism in Germany will die. Not because the “digital generation” isn’t willing to pay for journalism, but because publishers haven’t understood how digital business models work.
 > 
-> Viele Grüße
+> Best regards,
 > Maximilian Ruta
 
-Sollte ich eine Antwort bekommen werde ich die hier auch Veröffentlichen.
+If I receive a reply, I’ll publish it here as well.
