@@ -5,6 +5,8 @@ date:   2019-12-21 10:00:00 +0100
 categories: politik
 draft: false
 lang: en
+redirect_from:
+  - /politik/2019/12/21/der-digitale-tod-des-journalismus.html
 ---
 
 Political debate in Germany is becoming more and more difficult. Fake news, “alternative facts,” and one‑sided coverage

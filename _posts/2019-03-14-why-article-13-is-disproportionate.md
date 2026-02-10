@@ -5,6 +5,8 @@ date:   2019-03-14 16:00:00 +0100
 categories: politik
 draft: false
 lang: en
+redirect_from:
+  - /politik/2019/03/14/warum-artikel-13-unverhaeltnismaessig-ist.html
 ---
 
 Today I read an email from someone who couldn’t understand why the Green Party in Cologne decided to show solidarity

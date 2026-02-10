@@ -5,6 +5,8 @@ date:   2024-09-01 18:00:00 +0100
 categories: politik
 draft: false
 lang: en
+redirect_from:
+  - /politik/2024/09/01/meine-gedanken-zur-landtagswahl.html
 ---
 
 ## The “Firewall” Against the AfD—and Its Weaknesses

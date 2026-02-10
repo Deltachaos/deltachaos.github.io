@@ -5,6 +5,8 @@ date:   2018-12-12 16:00:00 +0100
 categories: politik
 draft: false
 lang: en
+redirect_from:
+  - /politik/2018/12/12/wie-geld-zur-zivilcourage-wird.html
 ---
 
 We buy organic products, choose green electricity, and boycott companies whose political goals contradict our own
