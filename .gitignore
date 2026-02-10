@@ -6,3 +6,4 @@
 /.env
 /vendor
 /_site
+/assets/data/discogs/*.jpg
