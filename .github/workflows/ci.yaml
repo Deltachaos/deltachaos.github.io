@@ -17,18 +17,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup PHP with PECL extension
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
-          tools: composer
-      - name: Composer
-        run: composer install
-      - name: Fetch discogs
-        env:
-          APP_ENV: prod
-          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
-        run: php bin/console.php fetch-discogs
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build
