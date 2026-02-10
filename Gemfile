@@ -21,9 +21,9 @@ gem "erb"
 gem "logger"
 gem "webrick"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
+# This site is built with GitHub Actions (.github/workflows/ci.yaml), not the
+# github-pages gem, so we use a specific Jekyll version above. The "github-pages
+# gem can't satisfy your Gemfile" warning is expected and can be ignored.
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
