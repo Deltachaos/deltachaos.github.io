@@ -1,1 +1,13 @@
-<div class="edit-on-github"><a target="_blank" href="https://github.com/Deltachaos/deltachaos.github.io/edit/source/{{ page.path }}">Fehler gefunden? Seite auf GitHub bearbeiten!</a></div>
+{%- assign page_lang = page.lang | default: site.lang | default: "en" -%}
+{%- assign lang_prefix = page_lang | downcase | slice: 0, 2 -%}
+{%- assign is_en = lang_prefix == "en" -%}
+
+<div class="edit-on-github">
+  <a target="_blank" href="https://github.com/Deltachaos/deltachaos.github.io/edit/source/{{ page.path }}">
+    {%- if is_en -%}
+      Found a mistake? Edit this page on GitHub!
+    {%- else -%}
+      Fehler gefunden? Seite auf GitHub bearbeiten!
+    {%- endif -%}
+  </a>
+</div>

@@ -1,15 +1,17 @@
 ---
 layout: fullwidth-music
-title: Musik
+title: Music
 order: 3
+lang: en
+description: "A short note on why music matters to me—and my carefully curated vinyl collection."
 ---
 
-Musik hat so viele Facetten. Sie ist ein politisches Statement, belangloses Geplänkel, Sie kann ein in eine
-andere Welt tauchen, sie macht ein wütend, ängstlich, leichtmütig, oder alles in einem.
+Music has so many facets. It’s a political statement, trivial chatter; it can pull you into another world, make you
+angry, anxious, carefree—or all of it at once.
 
 ## Vinyl
 
-Und weil Musik so viel über einen Menschen sagt, vielleicht mehr als manch anderes, findet Ihr hier meine sorgfältig
-kuratierte Vinyl Sammlung.
+And because music says so much about a person—perhaps more than many other things—you’ll find my carefully curated
+vinyl collection here.
 
-Für Vorschläge bin ich übrigens immer zu haben 😉!
+By the way, I’m always happy to receive suggestions!

@@ -1,6 +1,10 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
+  {%- assign page_lang = page.lang | default: site.lang | default: "en" -%}
+  {%- assign lang_prefix = page_lang | downcase | slice: 0, 2 -%}
+  {%- assign is_en = lang_prefix == "en" -%}
+
   <div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title_head | escape }}</h2>
@@ -16,8 +20,16 @@
             {%- endif -%}
             </li>
             {%- if site.email -%}
-            <li>E-Mail: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            <li>GnuPG Key: <a class="u-gnupg" href="{{ '/gnupg.html' | relative_url }}">{{ site.gnupg_title }}</a></li>
+            <li>
+              {%- if is_en -%}Email:{%- else -%}E-Mail:{%- endif -%}
+              &nbsp;
+              <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
+            <li>
+              {%- if is_en -%}GnuPG key:{%- else -%}GnuPG Key:{%- endif -%}
+              &nbsp;
+              <a class="u-gnupg" href="{{ '/gnupg.html' | relative_url }}">{{ site.gnupg_title }}</a>
+            </li>
             {%- endif -%}
         </ul>
       </div>
@@ -27,8 +39,26 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Artikel und Texte sind lizenziert unter der <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>. Weitere Informationen unter <a href="/license.html">LICENSE</a>.
+        <p>
+          {%- if is_en -%}
+            Passionate web developer, politically engaged, radio listener, vegetarian. I write here about whatever moves me: current politics, nerd stuff, and music.
+          {%- else -%}
+            {{- site.description | escape -}}
+          {%- endif -%}
+        </p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="{%- if is_en -%}Creative Commons License{%- else -%}Creative Commons Lizenzvertrag{%- endif -%}" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        </a>
+        <br />
+        {%- if is_en -%}
+          Articles and texts are licensed under the
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+          More information in <a href="/license.html">LICENSE</a>.
+        {%- else -%}
+          Artikel und Texte sind lizenziert unter der
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.
+          Weitere Informationen unter <a href="/license.html">LICENSE</a>.
+        {%- endif -%}
       </div>
     </div>
 
