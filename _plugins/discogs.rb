@@ -70,8 +70,10 @@ module Discogs
         local_image_path = "/assets/data/discogs/#{master_id}.jpg"
         local_file_path = File.join(Dir.pwd, local_image_path)
 
-        # Download image if it doesn't exist
-        if !File.exist?(local_file_path) && cover_url && !cover_url.empty?
+        # Download image if it doesn't exist (unless SKIP_DISCOGS_ASSETS is set)
+        if File.exist?(local_file_path)
+          cover_url = local_image_path
+        elsif cover_url && !cover_url.empty? && ENV['SKIP_DISCOGS_ASSETS'] != 'true'
           begin
             puts "Downloading cover image: #{cover_url}"
             sleep(@base_delay)
@@ -84,9 +86,8 @@ module Discogs
           rescue => e
             puts "  ✗ Failed to download #{cover_url}: #{e.message}"
           end
-        elsif File.exist?(local_file_path)
-          cover_url = local_image_path
         end
+        # When SKIP_DISCOGS_ASSETS is set and no local file: cover_url stays the remote URL
 
         clean[master_id] = {
           'artist' => artist_name,
