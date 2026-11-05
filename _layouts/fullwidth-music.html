@@ -29,7 +29,7 @@ layout: plain
       <ul>
           {% for item in site.data.collection %}
           {% assign release = item[1] %}
-          <li data-discogs-id="{{ release.id }}" data-discogs-master-id="{{ release.master_id }}" class="cover-tile fallback-background" id="discogs-release-{{ release.id }}">
+          <li data-discogs-id="{{ release.id }}" data-discogs-master-id="{{ release.master_id }}" class="cover-tile fallback-background" id="discogs-release-{{ release.id }}"{% if release.cover_image %} data-cover="{{ release.cover_image | escape }}"{% endif %}>
               <a class="tile-inner{% if release.page != "" and release.page != nil %} review{% endif %}"
                  {%- if release.page != "" and release.page != nil -%}
                  href="{{ release.page }}"
@@ -84,4 +84,5 @@ layout: plain
     });
   })();
 </script>
+<script src="{{ '/assets/js/cover-pigment.js' | relative_url }}"></script>
 {%- endif -%}
