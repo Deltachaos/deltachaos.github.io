@@ -75,6 +75,8 @@ shell script simply cannot do. So I started a small tool for it:
 
 ## barewsl
 
+![Linux applications from the dual-boot installation, running on the Windows desktop](/assets/images/2026/11/barewsl-screenshot.png)
+
 barewsl is a single Windows program. The disk layout goes into a YAML file: which physical disk,
 how to unlock it (LUKS, LVM, or both), which filesystems to mount, including Btrfs subvolumes, and
 which paths from the WSL distribution should be bind-mounted into the Linux tree. It still needs
@@ -92,8 +94,6 @@ reads the `.desktop` files of the Linux installation, and `barewsl app link` cre
 shortcuts for them, with the icons. Those shortcuts call barewsl again. So the programs from the
 Linux install can be started from the Start Menu, and no terminal window stays open while they
 run.
-
-![Linux applications from the dual-boot installation, running on the Windows desktop](/assets/images/2026/11/barewsl-screenshot.png)
 
 Is it perfect? No. But it is better than everything I had before.
 
