@@ -14,19 +14,19 @@ values. We accept that this may cost more. We hope this is how we can influence 
 better.
 
 And then there’s an industry that keeps producing new scandals: Cum-Ex, aiding tax evasion, worthless shipping funds,
-opaque products. An industry that has taken on a life of its own—like an accelerant that makes new bubbles form and
+opaque products. An industry that has taken on a life of its own, like an accelerant that makes new bubbles form and
 burst faster and faster. The problem is that our growth-driven economic system depends on an endless supply of new
 credit.
 
-As consumers, we depend on cashless payments—without them, we lose access to basic necessities like housing, work, and
+As consumers, we depend on cashless payments. Without them, we lose access to basic necessities like housing, work, and
 communication. We’ve gotten used to withdrawing cash for free almost anywhere, getting free credit cards, and paying
-nothing for a checking account. Some banks even *pay* you to open an account. We feel courted—and assume banks must be
+nothing for a checking account. Some banks even *pay* you to open an account. We feel courted, and assume banks must be
 doing great business with our accounts. We assume they “speculate” with our checking balances (more accurately: demand
 deposits / sight deposits) and therefore must be making enormous profits that fund all these “free” services. But all of
 these services obviously cost money.
 
 That’s not actually true. In reality, “free” checking accounts are often a loss for banks. Banks can only invest a small
-portion of the money sitting in checking accounts—but more on that later. Still, the free account is the gateway drug:
+portion of the money sitting in checking accounts, but more on that later. Still, the free account is the gateway drug:
 it’s meant to get us to do more business with the bank where the bank can earn money, such as loans and credit-card
 turnover, long-term investments, or a securities account.
 
@@ -42,25 +42,25 @@ on which other customers can demand their money back. That’s why demand deposi
 lending. Some theories (e.g. the “core deposits” concept) justify deviating from this to a degree, but that’s not the
 topic here.
 
-On top of that, regulations—such as capital requirements—limit the amount of credit a bank can extend.
+On top of that, regulations, such as capital requirements, limit the amount of credit a bank can extend.
 
 So a bank can only provide long-term loans when customers invest money long-term and sufficient equity capital is
 available.
 
 ## Why I’m with GLS Bank
 
-We rarely ask what this—*our*—money actually does in the world when it flows into investments and loans. It almost
+We rarely ask what this, *our*, money actually does in the world when it flows into investments and loans. It almost
 certainly also finances companies, parties, and organizations whose actions would repel us if we looked closely.
 
 It turns out that money can have a huge impact in changing society for the better. We want it to be used in ways that
-match our values—so that companies and projects that create deeper meaning receive that advance of trust.
+match our values, so that companies and projects that create deeper meaning receive that advance of trust.
 
-Unfortunately, it’s often hard for these projects and companies to obtain that kind of trust—and the financing that
+Unfortunately, it’s often hard for these projects and companies to obtain that kind of trust, and the financing that
 comes with it.
 
 For about two years now, I’ve been a customer and cooperative member of GLS Bank, because it mattered to me that I
 wouldn’t be advocating for environmental protection, organic agriculture, fair trade, social security, the protection
-of refugees, and world peace on the one hand—while my money works against those very interests on the other, simply
+of refugees, and world peace on the one hand, while my money works against those very interests on the other, simply
 because my bank invests solely for maximum return.
 
 GLS Bank keeps surprising me in a positive way. I’ve come to see that it doesn’t treat “fair banking” (as reviewed by
@@ -82,7 +82,7 @@ and that [doesn’t speculate on financial markets](https://www.gls.de/privatkun
 For money to create real value and meaning, you need to understand when it can be invested long-term.
 
 That doesn’t mean you must act altruistically. Of course, donated money has the longest-lasting effect because it never
-needs to be repaid—and GLS Bank even offers a way to
+needs to be repaid, and GLS Bank even offers a way to
 [finance donations](https://www.gls.de/gemeinnuetzige-kunden/finanzieren/leih-und-schenkgemeinschaft/).
 But, for example, [buying cooperative shares](https://www.gls.de/privatkunden/gls-anteile/) also creates significant
 impact: increasing the bank’s equity directly increases the amount of credit it can extend, and members receive an

@@ -93,6 +93,8 @@ shortcuts for them, with the icons. Those shortcuts call barewsl again. So the p
 Linux install can be started from the Start Menu, and no terminal window stays open while they
 run.
 
+![Linux applications from the dual-boot installation, running on the Windows desktop](/assets/images/2026/11/barewsl-screenshot.png)
+
 Is it perfect? No. But it is better than everything I had before.
 
 The big open issue is systemd. Starting systemd services inside the chroot is not possible, and

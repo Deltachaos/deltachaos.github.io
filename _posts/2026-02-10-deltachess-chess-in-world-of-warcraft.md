@@ -10,7 +10,7 @@ lang: en
 It started as a dumb bet with a guildmate:
 **“Can you write a fully handwritten chess program in under 7 hours?”**
 
-Seven hours later I had something that *kind of* moved pieces around — a tiny **Python** console program that could draw a
+Seven hours later I had something that *kind of* moved pieces around: a tiny **Python** console program that could draw a
 board and accept moves. Nothing fancy. No UI. No clocks. Barely any rules. But it was *mine*, and it worked enough to be
 fun.
 
@@ -18,7 +18,7 @@ Then another friend said the sentence that doomed my free time:
 
 **“Okay… but what if this was a World of Warcraft addon?”**
 
-And that idea was too good to ignore. So I started over — different language, different constraints, different everything.
+And that idea was too good to ignore. So I started over: different language, different constraints, different everything.
 The result is **DeltaChess**: chess inside WoW, against other players (including cross‑realm where WoW allows) or against
 the computer.
 
@@ -75,7 +75,7 @@ DeltaChess ships with a small engine framework that tries to make the hard parts
 
 ### The real reason the framework exists: testing outside of WoW
 
-One of the biggest practical problems early on wasn’t even search or evaluation — it was **testing**.
+One of the biggest practical problems early on wasn’t even search or evaluation. It was **testing**.
 
 Inside WoW I couldn’t easily run automated tests that would tell me whether an engine always produces **legal** moves,
 and whether the move generator behaves **consistently** across thousands of positions. Debugging that kind of thing by
@@ -90,7 +90,7 @@ very strong:
 
 | Engine | Notes |
 |--------|------|
-| **Dumb Goblin** | “Capture the highest thing” style — great for absolute beginners |
+| **Dumb Goblin** | “Capture the highest thing” style, great for absolute beginners |
 | **Sunfish** | MTD-bi + iterative deepening + transposition tables |
 | **GarboChess** | Alpha–beta with classic pruning/ordering heuristics (null move, killers, SEE, …) |
 | **Fruit 2.1** | A historically influential engine with a bag of serious search tricks (LMR, history heuristics, tapered eval, …) |
@@ -102,7 +102,7 @@ There was one catch though: those ports were written in a more “normal” styl
 done. In WoW’s single-threaded UI, that meant the game could hang for several seconds whenever an engine thought too long.
 
 So a big chunk of the project ended up being **rewriting/adapting the engines** to allow **async execution** in an event
-loop: do some work, yield, resume next frame, repeat — so the game stays responsive while the engine is searching.
+loop: do some work, yield, resume next frame, repeat, so the game stays responsive while the engine is searching.
 
 If you’re curious, the engine framework lives here: [deltachess-engine-framework](https://github.com/Deltachaos/deltachess-engine-framework)
 
@@ -113,7 +113,7 @@ This is the part where I’d love advice from people who have done this “for r
 The engines are written in **Lua** (because WoW), so they’re *slow* compared to typical C/C++ engines. I tried running
 tournaments via cutechess, but getting anything remotely stable takes an absurd amount of time.
 
-My goal isn’t perfect scientific accuracy—I just want players to pick an AI opponent that roughly matches their strength,
+My goal isn’t perfect scientific accuracy. I just want players to pick an AI opponent that roughly matches their strength,
 instead of random “difficulty” labels.
 
 So if you have experience with engine testing and rating, I’d appreciate any pointers:
@@ -123,7 +123,7 @@ So if you have experience with engine testing and rating, I’d appreciate any p
 - Any tricks for **cutting down match counts** without totally ruining the numbers (SPR T-tests, sequential testing,
   smarter opponent selection, etc.)?
 
-If you try DeltaChess, skim the code, or have “don’t do this, it’s a bad idea” comments—please let me know. This was
+If you try DeltaChess, skim the code, or have “don’t do this, it’s a bad idea” comments, please let me know. This was
 never meant to be a serious engine project, but it definitely pushed me down the rabbit hole, and I’d love to learn
 more.
 

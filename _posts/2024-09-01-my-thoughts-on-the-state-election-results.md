@@ -9,14 +9,14 @@ redirect_from:
   - /politik/2024/09/01/meine-gedanken-zur-landtagswahl.html
 ---
 
-## The “Firewall” Against the AfD—and Its Weaknesses
+## The “Firewall” Against the AfD and Its Weaknesses
 
 The so‑called “firewall” against the AfD cannibalizes itself through an involuntary “marriage” of partners who have
-hardly anything in common—until it eventually breaks. Unfortunately, that reminds me of 1939.
+hardly anything in common, until it eventually breaks. Unfortunately, that reminds me of 1939.
 
 ## Rejection of Migration: Causes and Consequences
 
-We have to accept—and acknowledge—that people in Germany no longer want immigration. There are various reasons for this:
+We have to accept, and acknowledge, that people in Germany no longer want immigration. There are various reasons for this:
 the country being overwhelmed by more than 2.5 million refugees over the last ten years, the emergence of parallel
 societies, and the erosion of people’s sense of fairness and justice.
 
@@ -25,7 +25,7 @@ societies, and the erosion of people’s sense of fairness and justice.
 That this sense of fairness has eroded is the responsibility of the political actors of recent years. Under the grand
 coalitions, action against precarious employment conditions happened only in “homeopathic” steps for a long time.
 Meaningful improvements for those who have the least are not broadly supported, because the working middle feels
-overburdened—by inflation, the heating law, and the threat of job loss. The impression is spreading that work no longer
+overburdened by inflation, the heating law, and the threat of job loss. The impression is spreading that work no longer
 pays off in this country.
 
 ## Bureaucracy and Hostility Toward Business as a Brake on Growth
@@ -37,11 +37,11 @@ snail’s pace is only surpassed by government projects. Today we build bridges 
 used to be constructed. We need a clear‑cutting of our jungle of laws and regulations, and a massive slimming‑down of
 bureaucracy.
 
-## The Danger of Simple Solutions—and the Way Forward
+## The Danger of Simple Solutions and the Way Forward
 
 The “simple solution” promoted by right‑wing parties is to kick downward. That may briefly satisfy an enraged middle,
 but it endangers social peace. The solution must be to improve conditions in the low‑wage sector and for the middle of
-society—for example by raising the minimum wage.
+society, for example by raising the minimum wage.
 
 ## Loss of Trust in Governing Parties
 
@@ -62,7 +62,7 @@ groups.
 
 On migration policy, immediate action is required: asylum procedures must not take longer than a few months, and taking
 up work in skilled trades and healthcare must be enabled right away. At the same time, consistent measures must be
-taken against rejected asylum seekers if they reject our societal values—this includes consistent deportations, so that
+taken against rejected asylum seekers if they reject our societal values. This includes consistent deportations, so that
 those who truly enrich our society, or who genuinely need our protection, can stay.
 
 It’s high time we implement these necessary reforms. Germany can’t afford to keep hesitating.
